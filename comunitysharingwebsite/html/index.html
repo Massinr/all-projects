@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="contacts">
+            <div class="contact">
+                <img src="/assets/pfp1.png" alt="User" class="contact-pic">
+                <div class="contact-info">
+                    <span class="contact-name">John Doe</span>
+                    <button class="contact-button">
+                        <i class="fas fa-envelope"></i> Message
+                    </button>
+                </div>
+            </div>
+            <div class="contact">
+                <img src="/assets/pfp1.png" alt="User" class="contact-pic">
+                <div class="contact-info">
+                    <span class="contact-name">Jane Smith</span>
+                    <button class="contact-button">
+                        <i class="fas fa-envelope"></i> Message
+                    </button>
+                </div>
+            </div>
+            <!-- Add more contacts as needed -->
+        </div>
+
+        <div class="main">
+            <div class="adding-section">
+                <div class="top">
+                    <input type="text" placeholder="Title" id="adding-title">
+                </div>
+                <div class="mid">
+                    <textarea id="adding-description" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+                </div>
+                <div class="bottom">
+                    <button class="submit-button">Post</button>
+                </div>
+            </div>
+
+            <div class="display-section">
+                <div class="post">
+                    <div class="initial-info">
+                        <img src="/assets/pfp1.png" alt="User" id="post-pic">
+                        <div class="post-info">
+                            <h2 id="post-title">Post Title</h2>
+                            <h6 id="post-date">July 17, 2023</h6>
+                        </div>
+                    </div>
+                    <div class="medium-info">
+                        <div class="text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim
+                                urna eget libero volutpat, ut ultricies justo efficitur. Integer convallis ut
+                                nisi sed facilisis. Nam vel tristique risus. Donec ultricies pellentesque mi
+                                at consequat. In convallis iaculis elementum. Morbi vel sem nec mauris efficitur
+                                convallis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interaction">
+                        <button class="interaction-button">
+                            <i class="far fa-thumbs-up"></i> Like
+                        </button>
+                        <button class="interaction-button">
+                            <i class="far fa-comment"></i> Comment
+                        </button>
+                        <button class="interaction-button">
+                            <i class="fas fa-share"></i> Share
+                        </button>
+                    </div>
+                    <div class="hidden"></div>
+                </div>
+                <!-- Add more posts as needed -->
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Communities</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="/jquery-3.6.3.min.js"></script>
+<script src="../js/dateGetter.js"></script>
+<script src="../js/addingPost.js"></script>
+<script src="../js/postUpdate.js"></script>
+</html>

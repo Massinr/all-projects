@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Hospital</title>
+</head>
+
+<body>
+    <div class="notificationContainer">
+    </div>
+    <div class="creator">
+        <button class="staffOption">staff</button>
+        <button class="patientOption">Patient</button>
+    </div>
+
+
+
+
+
+
+    <div class="staffSection">
+        <button id="closeStaffSection">&times;</button>
+        <h2>Add Staff member</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="role">Role:</label>
+            <input type="text" id="role" placeholder="Enter role">
+        </div>
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <input type="text" id="department" placeholder="Enter department">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter phone number">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="availability">Qualifications:</label>
+            <input type="text" id="qualifications" placeholder="Qualifications">
+        </div>
+        <div class="form-group">
+            <label for="availability">Experience:</label>
+            <input type="text" id="experience" placeholder="Experience">
+        </div>
+        <div class="form-group">
+            <label for="availability">Specializations:</label>
+            <input type="text" id="specializations" placeholder="Spetializations">
+        </div>
+        <div class="form-group">
+            <label for="availability">Availability:</label>
+            <input type="text" id="availability" placeholder="Availability">
+        </div>
+        <!-- name, role, department, phone, email, qualifications, experience, specializations, availability, picture -->
+
+        <div class="form-group">
+            <label for="pictureInput">Choose File:</label>
+            <div class="file-input">
+                <input type="file" id="pictureInput" name="pictureInput">
+                <label for="pictureInput" class="file-label">Select Image</label>
+            </div>
+        </div>
+
+
+        <button id="createCardBtn">Create Card</button>
+    </div>
+
+    <div class="patientSection">
+        <button id="closePatientSection">&times;</button>
+        <h2>Add Patient</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="patient-name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" id="age" placeholder="Enter age">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" placeholder="Enter gender">
+        </div>
+        <div class="form-group">
+            <label for="condition">Condition:</label>
+            <input type="text" id="condition" placeholder="Enter condition">
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact:</label>
+            <input type="text" id="patient-contact" placeholder="Enter contact number">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="patient-email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="appointment">Appointment:</label>
+            <input type="date" id="appointment" placeholder="Enter appointment details">
+        </div>
+
+        <div class="form-group">
+            <label for="pictureInput">Choose File:</label>
+            <div class="file-input">
+                <input type="file" id="pictureInputPatient" name="pictureInput">
+                <label for="pictureInputPatient" class="file-label">Select Image</label>
+            </div>
+        </div>
+        <button id="createPatientBtn">Add patient</button>
+    </div>
+
+    <div class="wrapper">
+        <div class="menu dark">
+            <img src="./assets/logodarkThem.png" alt="Logo" id="logo">
+            <button id="patient"><i class="ion-ios-people"></i> Patient</button>
+            <button id="staff"><i class="ion-person-stalker"></i> Staff</button>
+            <button id="dashboard"><i class="ion-ios-speedometer"></i> Dashboard</button>
+            <button id="auditlogs"><i class="ion-ios-paper"></i> Audit Logs</button>
+            <button id="settings"><i class="ion-ios-gear"></i> Settings</button>
+            <button id="create"><i class="fas fa-user-plus"></i> Create</button>
+            <button id="reports"><i class="fas fa-chart-line"></i> Reports</button>
+            <button id="appointments"><i class="fas fa-calendar-alt"></i>Appointments</button>
+            <button id="admitions"><i class="fas fa-hospital"></i> Admitions</button>
+        </div>
+
+        <div class="main dark">
+            <div class="staff">
+                <div class="card dark staff-card">
+                        <button id="removeStaff">Remove</button>
+                    <div class="info dark staff-info">
+                        <h3 class="name dark staff-name">John Doe</h3>
+                        <p class="role dark staff-role">Doctor</p>
+                        <p class="department dark staff-department">Cardiology</p>
+                        <ul class="contacts dark staff-contacts">
+                            <li><span class="contact-label">Phone:</span> 123-456-7890</li>
+                            <li><span class="contact-label">Email:</span> john.doe@example.com</li>
+                        </ul>
+                        <p class="qualifications dark staff-qualifications">MBBS, MD</p>
+                        <p class="experience dark staff-experience">10 years of experience</p>
+                        <p class="specializations dark staff-specializations">Specializations: Cardiac Electrophysiology</p>
+                        <p class="availability dark staff-availability">Availability: Weekdays</p>
+                    </div>
+                    <img src="/assets/staff.png" alt="Staff Photo" class="photo staff-photo">
+                </div>
+            </div>
+
+            <div class="patients">
+                <div class="card dark patient-card">
+                    <button id="menuBtn">...</button>
+                    <div id="elementMenu">
+                        <button id="removePatient">Remove</button>
+                        <button id="admitPatient">Admit</button>
+                    </div>
+                    <div class="info dark patient-info">
+                        <h3 class="name dark patient-name">Jane Smith</h3>
+                        <p class="age dark patient-age">Age: 35</p>
+                        <p class="gender dark patient-gender">Gender: Female</p>
+                        <p class="condition dark patient-condition">Condition: Hypertension</p>
+                        <p class="contact dark patient-contact">Contact: 123-456-7890</p>
+                        <p class="email dark patient-email">Email: jane.smith@example.com</p>
+                        <p class="appointment dark patient-appointment">Next Appointment: July 10, 2023</p>
+                    </div>
+                    <img src="/assets/patients.png" alt="Patient Photo" class="photo patient-photo">
+                </div>
+            </div>
+            <div class="logs">
+                <div id="log">
+                    <strong>New Staff Added:</strong> John Doe - July 1, 2023
+                </div>
+            </div>
+            <div class="dashboard dark">
+                <div class="dashboard-division dark first-division dark">
+                    <div class="calendar">
+                        <h2>Callendar</h2>
+                        <div class="mainCalendar"> <!--added by javascript --></div>
+                    </div>
+                    <div class="dataPatient dark">
+                        <h2>Patients</h2>
+                        <div class="meter">
+                            <div class="filling"></div>
+                        </div>
+                        <div class="stats dark">
+                            <div class="stat-item dark">
+                                <span class="stat-label">Admitted:</span>
+                                <span class="stat-value" id="admittedDataContainer">0</span>
+                            </div>
+                            <div class="stat-item dark">
+                                <span class="stat-label">Not Admitted:</span>
+                                <span class="stat-value" id="notAdmittedDataContainer">0</span>
+                            </div>
+                            <ul class="patient-list dark">
+                                <li class="patientAlarm dark">Jane Smith</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dashboard-division dark second-division">
+                    <div class="staffAvailability dark">
+                        <strong>John Doe : </strong> <span class="available">Available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="appointments">
+                <div class="appointmentElement">
+                    <div class="imageContainer">
+                        <img src="/assets/patients.png" alt="">
+                    </div>
+                    <div class="contentContainer">
+                        <h3 id="appointmentName">John Doe</h3>
+                        <p><strong>Condition:</strong> HyperTension</p>
+                        <p><strong>Date:</strong><span id="appointmentDate">2015-7-29</span></p>
+                    </div>
+                    <button class="deleteAppointment">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="admitions">
+
+            </div>
+        <div class="reports dark">
+            <div class="finance-report dark">
+                <h3 class="report-title dark">Finance Report</h3>
+                <div class="report-details dark">
+                    <div class="report-item dark">
+                        <span class="report-label dark">Total Revenue:</span>
+                        <span class="report-value dark">$500,000</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">Total Expenses:</span>
+                        <span class="report-value dark">$300,000</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">Net Profit:</span>
+                        <span class="report-value dark">$200,000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="patient-report dark">
+                <h3 class="report-title dark">Patient Report</h3>
+                <div class="report-details dark">
+                    <div class="report-item dark">
+                        <span class="report-label dark">Total Patients:</span>
+                        <span class="report-value dark">1,000</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">New Patients (This Month):</span>
+                        <span class="report-value dark">200</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">Average Daily Visits:</span>
+                        <span class="report-value dark">50</span>
+                    </div>
+                </div>
+            </div>
+            <div class="inventory-report dark">
+                <h3 class="report-title dark">Inventory Report</h3>
+                <div class="report-details dark">
+                    <div class="report-item dark">
+                        <span class="report-label dark">Total Items:</span>
+                        <span class="report-value dark">500</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">Low Stock Items:</span>
+                        <span class="report-value dark">50</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">Out of Stock Items:</span>
+                        <span class="report-value dark">20</span>
+                    </div>
+                </div>
+            </div>
+            <div class="appointment-report dark">
+                <h3 class="report-title dark">Appointment Report</h3>
+                <div class="report-details dark">
+                    <div class="report-item dark">
+                        <span class="report-label dark">Total Appointments:</span>
+                        <span class="report-value dark">800</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">Upcoming Appointments:</span>
+                        <span class="report-value dark">100</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">Missed Appointments:</span>
+                        <span class="report-value dark">20</span>
+                    </div>
+                </div>
+            </div>
+            <div class="employee-report dark">
+                <h3 class="report-title dark">Employee Report</h3>
+                <div class="report-details dark">
+                    <div class="report-item dark">
+                        <span class="report-label dark">Total Employees:</span>
+                        <span class="report-value dark">150</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">Active Employees:</span>
+                        <span class="report-value dark">130</span>
+                    </div>
+                    <div class="report-item dark">
+                        <span class="report-label dark">On Leave Employees:</span>
+                        <span class="report-value dark">10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+            <div class="settings">
+            <div class="main-container">
+                <div class="notification-container dark">
+                    <div class="notification-toggle dark">
+                        <label class="switch">
+                            <input type="checkbox" id="notificationSwitch" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label dark">Notifications</span>
+                    </div>
+                    <p class="description dark">Toggle to disable notifications</p>
+                </div>
+                
+                <div class="logs-container dark">
+                    <div class="logs-toggle dark">
+                        <label class="switch">
+                            <input type="checkbox" id="logsSwitch" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label dark">Logs</span>
+                    </div>
+                    <p class="description dark">Toggle to disable Logs</p>
+                </div>
+                <div class="theme-container dark">
+                    <div class="theme-toggle dark">
+                        <label class="switch">
+                            <input type="checkbox" id="themeSwitch" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label dark">Theme</span>
+                    </div>
+                    <p class="description dark">Toggle Dark Theme</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="script.js"></script>
+    <script src="/toggleDarkMode.js"></script>
+</body>
+
+</html>

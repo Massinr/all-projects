@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Hospital Dashboard</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="widget">
+            <div class="widget-header">
+                <i class="icon ion-md-pulse"></i>
+                <h2>Patient Statistics</h2>
+            </div>
+            <div class="widget-content">
+                <p>Total Patients</p>
+                <h3 id="totalPatients">0</h3>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 60%"></div>
+                </div>
+                <p>Admitted Patients: <span id="admittedPatients">0</span></p>
+                <p>Discharged Patients: <span id="dischargedPatients">0</span></p>
+            </div>
+        </div>
+        <div class="widget">
+            <div class="widget-header">
+                <i class="icon ion-md-medkit"></i>
+                <h2>Doctor Availability</h2>
+            </div>
+            <div class="widget-content">
+                <table>
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Department</th>
+                        <th>Availability</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. John Doe</td>
+                        <td>Cardiology</td>
+                        <td><span class="status-green">Available</span></td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Jane Smith</td>
+                        <td>Orthopedics</td>
+                        <td><span class="status-red">Unavailable</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="widget">
+            <div class="widget-header">
+                <i class="icon ion-md-calendar"></i>
+                <h2>Appointment Schedule</h2>
+            </div>
+            <div class="widget-content">
+                <ul id="appointmentList">
+                    <li>No appointments scheduled</li>
+                </ul>
+            </div>
+        </div>
+        <div class="widget">
+            <div class="widget-header">
+                <i class="icon ion-md-alert"></i>
+                <h2>Emergency Room</h2>
+            </div>
+            <div class="widget-content">
+                <p>Patients in Queue: <span id="emergencyQueue">0</span></p>
+                <p>Available Beds: <span id="availableBeds">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

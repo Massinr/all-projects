@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="./panel.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="info">
+            <h1>Massine .Co</h1>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.M9h1vYFEthdptFqUN7d3ZwHaEo&pid=Api&P=0" alt="">
+        </div>
+        <div class="btn-container">
+            <button class="filter" id="glob"><i class="fa fa-filter" aria-hidden="true"></i> Filter</button>
+            <button class="create" id="glob"><i class="fa fa-user-plus" aria-hidden="true"></i>Create</button>
+            <button class="stats" id="glob"><i class="fa fa-area-chart" aria-hidden="true"></i>Stats</button>
+            <button class="delete" id="glob"><i class="fa fa-user-times" aria-hidden="true"></i>Delete</button> 
+        </div>
+    </div>
+    <div class="client-container">
+        
+    </div>
+    <div class="filter-menu">
+        <input type="text" name="" id="filterData" placeholder="Search using full name //no space">
+        <button class="search" id="glob">Search</button>
+        <button class="reset" id="glob" style="margin-top : 5px">reset</button>
+    </div>
+    <div class="stats-menu">
+        <label id="numberOfClients">Total number of clients</label>
+        <label id="numberOfcurrentClients">Total number of clients</label>
+        <label id="numberOfDeletedClients">Total number of clients</label>
+        <label id="clientHistory">Total number of clients</label>
+    </div>
+    <div class="create-menu">
+        <form action="">
+            <input type="text" class="fname" placeholder="Fist Name"required >
+            <input type="text" class="lname" placeholder="Last Name"re >
+            <input type="text" class="job" placeholder="Job" >
+            <input type="number" class="age" placeholder="Age" >
+            <input type="email" class="email" placeholder="Email" >
+            <button id="glob" class="save" action="submit"><i class="fa fa-save" aria-hidden="true"></i>Save</button>
+        </form>
+    </div>
+    <div class="delete-menu">
+        <input type="text" name="" id="deleteData" placeholder="full client name, no space">
+        <button class="deletebtn" id="glob" >Delete</button>
+    </div>
+    
+    <script src="/jquery-3.6.3.min.js"></script>
+    <script src="panel.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.calendar-section {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#calendarContainer {
+    margin-bottom: 20px;
+}
+
+#addAppointmentBtn {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addAppointmentBtn:hover {
+    background-color: #002b4d;
+}

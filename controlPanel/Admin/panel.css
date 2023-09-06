@@ -1,0 +1,205 @@
+/*admin panel style created by Massine */
+
+
+
+body {
+    background-color: rgb(227, 227, 227);
+
+}
+.navbar{
+    position: absolute;
+    height: 1000px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgb(179, 179, 179);
+    z-index: 6;
+
+}
+.navbar .btn-container{
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+    gap: 16px;
+}
+.navbar .btn-container button{
+    background-color: rgb(251, 251, 251) !important;
+}
+.navbar .info{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 170px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .info img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 10px inset rgb(202, 202, 202) ;
+}
+.client-container{
+    position: absolute;
+    left: 250px;
+    top: 0;
+    width: 1670px;
+    height: auto;
+    background: transparent;
+    z-index: 2;
+    display: flex;
+    flex-wrap:wrap;
+}
+.client {
+    margin: 5px;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+.client .shown img{
+    width: 100px;
+    position: absolute;
+}
+.client .shown img:nth-child(2){
+    width: 100%;
+}
+.client .shown img:nth-child(1){
+    display: block;
+    left: 25%;
+    top: 14%;
+    z-index: 2;
+    border-radius: 100%;
+    
+}
+.client .onclick{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 169px;
+}
+.client .onclick #contact{
+    position: inherit;
+    background-color: rgb(248, 248, 248);
+    top: 182px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 1px black;
+}
+.client .onclick #contact:hover{
+   animation: buttonHoverAnimation .1s ease forwards;
+}
+@keyframes buttonHoverAnimation {
+    0%{}
+    100%{
+        top: 170px;
+        box-shadow: 0px 5px 20px 1px black;
+    }
+}
+.label-container{
+    display: flex;
+    flex-direction: column;
+}
+.label-container span{
+    font-weight: bold;
+}
+/*.menu-element{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 100px;
+    left: 600px;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: rgb(103, 103, 103);
+    border-bottom: 5px solid black;
+} */
+.filter-menu{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 100px;
+    left: 600px;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: rgb(103, 103, 103);
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.delete-menu{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 100px;
+    left: 600px;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: rgb(103, 103, 103);
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    padding: 12px;
+    width: 300px;
+    outline: none !important; 
+    background-color: rgb(52, 52, 52);   
+    border-radius: 5px;
+    color: white;
+}
+.create-menu{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 100px;
+    left: 600px;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: rgb(103, 103, 103);
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.create-menu input {
+    z-index: 1;
+}
+.stats-menu{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 100px;
+    left: 600px;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: rgb(103, 103, 103);
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
